@@ -7,9 +7,9 @@
     <StackLayout BackgroundColor="Yellow"
                  VerticalOptions="Center"
                  HorizontalOptions="Center">
-    <Label Text="Lable 1" />
-    <Label Text="Lable 2" />
-    <Label Text="Lable 3" />
+    <Label Text="Exibitions" />
+    <Label Text="Art Works" />
+    <Label Text="Biography" />
         </StackLayout>
     
 </ContentPage>
