@@ -9,4 +9,15 @@
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\Unknown" />
+    <None Remove="Images\659278.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Unknown" />
+    <EmbeddedResource Include="Images\659278.jpg" />
+  </ItemGroup>
 </Project>
