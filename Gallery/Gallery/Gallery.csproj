@@ -8,6 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
@@ -15,9 +16,14 @@
   <ItemGroup>
     <None Remove="Images\Unknown" />
     <None Remove="Images\659278.jpg" />
+    <None Remove="Images\Logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\Unknown" />
     <EmbeddedResource Include="Images\659278.jpg" />
+    <EmbeddedResource Include="Images\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="WelcomesPage.cs" />
   </ItemGroup>
 </Project>

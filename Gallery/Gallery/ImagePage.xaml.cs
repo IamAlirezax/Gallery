@@ -12,8 +12,8 @@ namespace Gallery
             InitializeComponent();
             // var imageSource = new UriImageSource { Uri = new Uri("http://www.artlicks.com/files/2379/600px_marjan-jabinpishe.jpg") };
             //imageSource.CachingEnabled = false;
-            // image.Source = imageSource;
-            btn.Image
+             image.Source = ImageSource.FromResource("Gallery.Images.Logo.jpg");
+            
             
             
             
