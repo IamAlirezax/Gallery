@@ -3,7 +3,7 @@
 	<ListView x:Name="listView" ItemSelected="Handle_ItemSelected">
 		<ListView.ItemTemplate>
 			<DataTemplate>
-				<TextCell Text="{Binding Name}" Detail="{Binding Status}" />>
+				<TextCell Text="{Binding Name}" Detail="{Binding Status}" />
 			</DataTemplate>
 		</ListView.ItemTemplate>		
 	</ListView>
