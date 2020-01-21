@@ -10,7 +10,7 @@ namespace Gallery
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new MyPage ());
+            MainPage = new NavigationPage (new MainPage ());
         }
 
         protected override void OnStart()

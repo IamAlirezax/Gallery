@@ -17,11 +17,13 @@
     <None Remove="Images\Unknown" />
     <None Remove="Images\659278.jpg" />
     <None Remove="Images\Logo.jpg" />
+    <None Remove="Images\Bollebygd.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\Unknown" />
     <EmbeddedResource Include="Images\659278.jpg" />
     <EmbeddedResource Include="Images\Logo.jpg" />
+    <EmbeddedResource Include="Images\Bollebygd.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="WelcomesPage.cs" />
