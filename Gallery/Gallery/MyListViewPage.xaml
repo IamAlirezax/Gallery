@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
 <ContentPage
     Padding="0,20,0,0"
     xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Gallery.MyListViewPage">
     <StackLayout>
 
-   <SearchBar Placeholder="Search..." TextChanged= "Handle_TextChanged" SearchButtonPressed=""/>
-   <ListView x:Name="MyListView">
+   <SearchBar Placeholder="Search..." TextChanged= "Handle_TextChanged" />
+   <ListView x:Name="MyListView" ItemSelected="">
        <ListView.ItemTemplate>
  <DataTemplate>
      

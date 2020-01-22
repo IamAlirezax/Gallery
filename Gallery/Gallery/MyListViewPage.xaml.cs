@@ -12,7 +12,19 @@ namespace Gallery
 {
     
     public partial class MyListViewPage : ContentPage
+
     {
+        async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+                return;
+
+            var exibition = e.SelectedItem as Exibition;
+            await Navigation.PushAsync(new Exibitions(exibition));
+            MyListView.SelectedItem = null;
+        }
+
+
         void Handle_TextChanged(object sender, Xamarin.Forms. TextChangedEventArgs e)
         {
             MyListView.ItemsSource = GetExibitions(e.NewTextValue);
