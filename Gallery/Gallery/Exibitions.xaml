@@ -2,6 +2,11 @@
 
 
 <ContentPage Padding="20" Title="{Binding Name }" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Gallery.Exibitions">
-  <Image Source="{ Binding ImageUrl  }" />
-     
+  <StackLayout Padding="0" > <Image  Source="{ Binding ImageUrl  }" />
+    <Label Text="{ Binding Gallery } " TextColor="Blue" />
+      <Label Text="{ Binding Place } " TextColor="Green"/>
+      <Label Text="{ Binding Info } "  TextColor="Coral"/>
+
+
+     </StackLayout>
 </ContentPage>

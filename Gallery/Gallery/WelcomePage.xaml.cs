@@ -12,8 +12,16 @@ namespace Gallery
 {
     public partial class WelcomePage : ContentPage
     {
+        async void Handle_Clicked(object sender, System.EventArgs e)
+        {
 
-     
+
+
+            await Navigation.PushAsync(new MyListViewPage());
+
+        }
+
+
 
         async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
             {
@@ -36,17 +44,17 @@ namespace Gallery
             {
                 var options = new List<Option>
                 {
-                    new Option { title = "GlasArt" },
-                    new Option { title = "Exibitions" },
-                    new Option { title = "Biography" },
-                    new Option { title = "Contact" }
+                    new Option { Title = "GlasArt" },
+                    new Option { Title = "Exibitions" },
+                    new Option { Title = "Biography" },
+                    new Option { Title = "Contact" }
 
                 };
 
                 if (string.IsNullOrWhiteSpace(searchText))
                     return options;
 
-                return options.Where(c => c.title.StartsWith(searchText, StringComparison.Ordinal));
+                return options.Where(c => c.Title.StartsWith(searchText, StringComparison.Ordinal));
             }
 
             public WelcomePage ()

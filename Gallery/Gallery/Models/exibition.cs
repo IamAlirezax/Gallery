@@ -13,7 +13,7 @@ namespace Gallery.Models
         public string Place { get; set; }
         public string Gallery { get; set; }
         public string ImageUrl { get; set; }
-        public String info { get; set; }
+        public string Info { get; set; }
 
 
 

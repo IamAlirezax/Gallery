@@ -4,14 +4,30 @@
 
        <Image  Source="Gallery.Images.Logo.jpg"  />
        <ListView x:Name= "FirstList" SeparatorColor="Aqua" ItemSelected="Handle_ItemSelected" >
-
+           
           <ListView.ItemTemplate>
+              
               <DataTemplate>
-                  <TextCell Text="{Binding title}" Detail="{Binding info}" />
+                  <ViewCell>
+                      <StackLayout Padding="5" Orientation="Horizontal">
+                          <StackLayout HorizontalOptions="StartAndExpand" >
+
+            <Label Text="{Binding Title}" />
+
+                          </StackLayout>
+                 
+                     <Button Text="ClickOnMe" Clicked="Handle_Clicked"></Button>
+
+                      </StackLayout>
+                
+                      </ViewCell>
               </DataTemplate>
+              
 
 
           </ListView.ItemTemplate>
-       </ListView>   
+           
+       </ListView>
+      
        </StackLayout>
 </ContentPage>

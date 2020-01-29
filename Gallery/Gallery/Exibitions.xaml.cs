@@ -8,7 +8,7 @@ namespace Gallery
 {
     public partial class Exibitions : ContentPage
     {
-        private Option option;
+        //private Option option;
 
         public Exibitions(Exibition exibition)
         {
@@ -20,9 +20,9 @@ namespace Gallery
             InitializeComponent();
         }
 
-        public Exibitions(Option option)
-        {
-            this.option = option;
-        }
+    //    public Exibitions(Option option)
+    //    {
+    //        this.option = option;
+    //    }
     }
 }

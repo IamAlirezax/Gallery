@@ -8,8 +8,8 @@ namespace Gallery.Models
     public class Option
 
         {
-        public string title { get; set; }
-        public string info { get; set; }
+        public string Title { get; set; }
+        public string Info { get; set; }
 
     };
     }

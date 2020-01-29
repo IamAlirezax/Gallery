@@ -8,6 +8,8 @@ namespace Gallery
 {
     public partial class MainPage : ContentPage
     {
+        private Option option;
+
         public MainPage(Option option)
         {
             if (option == null)
@@ -17,5 +19,11 @@ namespace Gallery
 
             InitializeComponent();
         }
+
+    //    public MainPage(Option option)
+    //    {
+    //        this.option = option;
+    //    }
     }
 }
+
