@@ -7,10 +7,10 @@
 <ContentPage
     Padding="0,20,0,0"
     xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Gallery.MyListViewPage">
-    <StackLayout>
+    <StackLayout HorizontalOptions="StartAndExpand">
 
-   <SearchBar Placeholder="Search..." TextChanged= "Handle_TextChanged" />
-   <ListView x:Name="MyListView" ItemSelected="">
+   <!--<SearchBar Placeholder="Search..." TextChanged= "Handle_TextChanged" />-->
+   <ListView x:Name="MyListView" ItemSelected="Handle_ItemSelected"  >
        <ListView.ItemTemplate>
  <DataTemplate>
      
@@ -26,7 +26,7 @@
 
              </StackLayout>
 
-             <Button Text="Detail" />
+             <!--<Button  Text="Detail" Clicked="Handle_Clicked"/>-->
 
          </StackLayout>
      </ViewCell>

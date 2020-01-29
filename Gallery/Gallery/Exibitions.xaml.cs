@@ -8,6 +8,8 @@ namespace Gallery
 {
     public partial class Exibitions : ContentPage
     {
+        private Option option;
+
         public Exibitions(Exibition exibition)
         {
             if (exibition == null)
@@ -16,6 +18,11 @@ namespace Gallery
             BindingContext = exibition;
 
             InitializeComponent();
+        }
+
+        public Exibitions(Option option)
+        {
+            this.option = option;
         }
     }
 }
