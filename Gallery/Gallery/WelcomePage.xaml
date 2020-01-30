@@ -2,7 +2,7 @@
 <ContentPage  Title="Welcome to Marjan's Art Gallery"  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Gallery.WelcomePage">
    <StackLayout>
 
-       <Image  Source="Gallery.Images.Logo.jpg"  />
+      
        <ListView x:Name= "FirstList" SeparatorColor="Aqua" ItemSelected="Handle_ItemSelected" >
            
           <ListView.ItemTemplate>
@@ -16,7 +16,7 @@
 
                           </StackLayout>
                  
-                     <Button Text="ClickOnMe" Clicked="Handle_Clicked"></Button>
+                  
 
                       </StackLayout>
                 
@@ -28,6 +28,7 @@
           </ListView.ItemTemplate>
            
        </ListView>
-      
+         <!--<Button Text="ClickOnMe" Clicked="Handle_Clicked"></Button>-->
        </StackLayout>
+   
 </ContentPage>

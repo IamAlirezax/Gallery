@@ -8,6 +8,15 @@ namespace Gallery
 {
     public partial class MainPage : ContentPage
     {
+        async void Handle_Clicked(object sender, System.EventArgs e)
+        {
+
+
+
+            await Navigation.PushAsync(new MyListViewPage());
+
+        }
+
         private Option option;
 
         public MainPage(Option option)

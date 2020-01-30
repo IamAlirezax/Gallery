@@ -10,6 +10,8 @@ namespace Gallery.Models
         {
         public string Title { get; set; }
         public string Info { get; set; }
+        public string ImageUrl { get; set; }
+
 
     };
     }
